@@ -1,0 +1,6 @@
+Term[0]: order=0, coeff=1, value=1
+Term[1]: order=2, coeff=-1, value=0
+Term[2]: order=4, coeff=1, value=0
+Term[3]: order=6, coeff=-1, value=0
+Term[4]: order=8, coeff=1, value=0
+Approximation of cos(x) at x=0 with 5 terms: 1

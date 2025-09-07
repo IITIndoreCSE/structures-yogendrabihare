@@ -1,0 +1,2 @@
+Book[0]: title=The Hobbit, author=J.R.R. Tolkien, year=1937, pages=310, isbn=978-0547928227
+Book[1]: title=Dune, author=Frank Herbert, year=1965, pages=412, isbn=978-0441172719

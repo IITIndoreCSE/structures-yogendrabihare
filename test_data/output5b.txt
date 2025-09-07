@@ -1,0 +1,2 @@
+Sensor[0]: id=201, temperature=25, voltage=5, status=Active
+Sensor[1]: id=202, temperature=30.5, voltage=4.7, status=Inactive

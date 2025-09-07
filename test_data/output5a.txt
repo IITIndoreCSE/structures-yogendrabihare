@@ -1,0 +1,3 @@
+Sensor[0]: id=101, temperature=36.5, voltage=3.3, status=Active
+Sensor[1]: id=102, temperature=40.2, voltage=3.1, status=Inactive
+Sensor[2]: id=103, temperature=38.7, voltage=3.4, status=Active

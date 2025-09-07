@@ -1,0 +1,2 @@
+Plate[0]: width=2, height=3, density=7850, mass=471, material=Steel
+Plate[1]: width=1.5, height=2.5, density=2700, mass=202.5, material=Aluminium
