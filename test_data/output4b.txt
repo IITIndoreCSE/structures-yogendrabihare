@@ -1,6 +1,6 @@
 Term[0]: order=0, coeff=1, value=1
-Term[1]: order=2, coeff=-1, value=-1.2337
-Term[2]: order=4, coeff=1, value=0.253669
-Term[3]: order=6, coeff=-1, value=-0.0208635
-Term[4]: order=8, coeff=1, value=0.000919262
-Approximation of cos(x) at x=1.5708 with 5 terms: -3.34811e-06
+Term[1]: order=2, coeff=-1, value=-0.5
+Term[2]: order=4, coeff=1, value=0.041667
+Term[3]: order=6, coeff=-1, value=-0.001389
+Term[4]: order=8, coeff=1, value=0.000025
+Approximation of cos(x) at x=1.0000 with 5 terms: 0.540302
