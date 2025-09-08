@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cmath>
 #include <fstream>
+#include <iomanip>
 
 using namespace std;
 
@@ -9,11 +10,32 @@ struct Point {
     double y;
 };
 
+// Helper to print numbers without trailing .0000
+void print_number(double val) {
+    if (fabs(val - round(val)) < 1e-6) {
+        cout << (long long)round(val);  // print as integer
+    } else {
+        cout << val;  // print as double
+    }
+}
+
 void print_point_rotation(double x_before, double y_before,
                           double theta, double x_after, double y_after) {
-    cout << "Before rotation: (x=" << x_before << ", y=" << y_before << ")\n";
-    cout << "After rotation (θ=" << theta << " rad): "
-         << "(x=" << x_after << ", y=" << y_after << ")\n";
+    // Round tiny values close to zero
+    if (fabs(x_after) < 1e-6) x_after = 0.0;
+    if (fabs(y_after) < 1e-6) y_after = 0.0;
+
+    cout << "Before rotation: (x=";
+    print_number(x_before);
+    cout << ", y=";
+    print_number(y_before);
+    cout << ")\n";
+
+    cout << "After rotation (θ=" << fixed << setprecision(4) << theta << " rad): (x=";
+    print_number(x_after);
+    cout << ", y=";
+    print_number(y_after);
+    cout << ")\n";
 }
 
 int main(int argc, char* argv[]) {
