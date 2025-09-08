@@ -4,13 +4,9 @@
 
 using namespace std;
 
-struct Rectangle {
-    double width;
-    double height;
-    double thickness;
-    double density;
-    char material[50];
-};
+// TODO: Define the Rectangle struct according to README
+// struct Rectangle {
+// };
 
 void print_plate(int index, double width, double height,
                  double density, double mass, const char* material) {
@@ -36,22 +32,20 @@ int main(int argc, char* argv[]) {
 
     int num_plates;
     input >> num_plates;
+    input.ignore(); // skip newline after number
 
-    Rectangle plates[10]; // allow up to 10 plates
+    const int MAX_PLATES = 10;
 
-    for (int i = 0; i < num_plates; i++) {
-        input >> plates[i].width;
-        input >> plates[i].height;
-        input >> plates[i].thickness;
-        input >> plates[i].density;
-        input.ignore(); // skip newline before material
-        input.getline(plates[i].material, 50);
-    }
+    // TODO: Create an array of Rectangle
+    // Rectangle plates[MAX_PLATES];
 
-    for (int i = 0; i < num_plates; i++) {
-        double mass = plates[i].width * plates[i].height * plates[i].thickness * plates[i].density;
-        print_plate(i, plates[i].width, plates[i].height, plates[i].density, mass, plates[i].material);
-    }
+    // TODO: Read plate data from input
+    // for (int i = 0; i < num_plates; i++) {
+    // }
+
+    // TODO: Compute mass for each plate and call print_plate
+    // for (int i = 0; i < num_plates; i++) {
+    // }
 
     return 0;
 }
